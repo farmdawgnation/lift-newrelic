@@ -25,6 +25,17 @@ Then just start up your JVM with the javaagent flag, as outlined in
 among the great, the few, who monitor their Lift apps with NewRelic and actually understand what URLs are
 consuming time.
 
+## How does it work?
+
+This add-on relies on SiteMap, so if you're not using SiteMap in your Lift app, you should be. When a new request comes
+in, the NewRelicTransactionNaming code finds the Loc instance that matches the request, and sets the transaction name
+to that value. So, if a Loc is associated with the URL `/amnesia` you'll see `/amnesia` in your NewRelic transactions.
+If the Loc is parameterized, and is associated with something like `/resource/*/edit` you'll see `/resource/star/edit`
+for that transaction in your NewRelic Web Transactions list.
+
+For now, APIs using RestHelper will need to manually set their transaction name, since there's no good way to do that
+auto-magically yet.
+
 ## About Me
 
 My name is Matt Farmer. By day, I ship code at [Elemica](http://elemica.com). By night, I work on
