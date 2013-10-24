@@ -30,8 +30,10 @@ import com.newrelic.api.agent._
  *   "things" / * / "edit"
  * }}}
  *
- * It would register in NewRelic as "/things/star/edit". Also, comet requests
- * ajax requests will be registered as /comet_request and /ajax_request.
+ * It would register in NewRelic as "/things/star/edit". Also,
+ * ajax requests will be registered as /ajax_request unless you
+ * use the NewRelic API to change the transaction name in your request
+ * handling code.
 **/
 object NewRelicTransactionNaming {
   protected def nameTransaction(req: Box[Req]) {
@@ -41,7 +43,9 @@ object NewRelicTransactionNaming {
         NewRelic.setTransactionName("SiteMap", transactionName)
       } openOr {
         if (req.uri.startsWith("/comet_request")) {
-          NewRelic.setTransactionName("AJAX", "/comet_request")
+          // We ingnore comet requests becasue they are long polls. Their long
+          // nature inordinately skews timing results for the application.
+          NewRelic.ignoreTransaction
         } else if (req.uri.startsWith("/ajax_request")) {
           NewRelic.setTransactionName("AJAX", "/ajax_request")
         }
