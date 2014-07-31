@@ -4,15 +4,15 @@ version := "1.1.1-SNAPSHOT"
 
 organization := "me.frmr.newrelic"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.0"
 
 crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.4", "2.11.0")
 
 libraryDependencies ++= {
-  val liftVersion = "2.6-SNAPSHOT"
+  val liftVersion = "2.6-RC1"
   Seq(
     "net.liftweb"               %% "lift-webkit"      % liftVersion     % "compile",
-    "com.newrelic.agent.java"   % "newrelic-api"      % "3.6.0"
+    "com.newrelic.agent.java"   % "newrelic-api"      % "3.8.+"
   )
 }
 
