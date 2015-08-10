@@ -38,5 +38,4 @@ auto-magically yet.
 
 ## About Me
 
-My name is Matt Farmer. By day, I ship code at [Elemica](http://elemica.com). By night, I work on
-[Anchor Tab](http://anchortab.com), and making the world a better place for all.
+My name is Matt Farmer. By day, I ship code at [Elemica](http://elemica.com). By night I work on projects like the [Lift Framework](http://github.com/lift/framework) and others.
