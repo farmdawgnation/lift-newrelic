@@ -1,6 +1,6 @@
 name := "lift-newrelic"
 
-version := "1.1.2-SNAPSHOT"
+version := "1.1.3-SNAPSHOT"
 
 organization := "me.frmr.newrelic"
 
@@ -12,7 +12,7 @@ libraryDependencies ++= {
   val liftVersion = "2.6.2"
   Seq(
     "net.liftweb"               %% "lift-webkit"      % liftVersion     % "compile",
-    "com.newrelic.agent.java"   % "newrelic-api"      % "3.8.+"
+    "com.newrelic.agent.java"   % "newrelic-api"      % "3.30.+"
   )
 }
 
