@@ -38,4 +38,4 @@ auto-magically yet.
 
 ## About Me
 
-My name is Matt Farmer. By day, I ship code at [Elemica](http://elemica.com). By night I work on projects like the [Lift Framework](http://github.com/lift/framework) and others.
+My name is Matt Farmer. By day, I ship code at [Domino Data Lab](http://dominodatalab.com). By night I work on projects like the [Lift Framework](http://github.com/lift/framework) and others.
