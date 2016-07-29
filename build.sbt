@@ -4,12 +4,12 @@ version := "1.1.3-SNAPSHOT"
 
 organization := "me.frmr.newrelic"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.4", "2.11.7")
+crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.4", "2.11.8")
 
 libraryDependencies ++= {
-  val liftVersion = "2.6.2"
+  val liftVersion = "2.6.3"
   Seq(
     "net.liftweb"               %% "lift-webkit"      % liftVersion     % "compile",
     "com.newrelic.agent.java"   % "newrelic-api"      % "3.30.+"
@@ -18,8 +18,8 @@ libraryDependencies ++= {
 
 publishTo <<= version { (v: String) =>
   val nexus = "https://oss.sonatype.org/"
-  if (v.trim.endsWith("SNAPSHOT")) 
-    Some("snapshots" at nexus + "content/repositories/snapshots") 
+  if (v.trim.endsWith("SNAPSHOT"))
+    Some("snapshots" at nexus + "content/repositories/snapshots")
   else
     Some("releases"  at nexus + "service/local/staging/deploy/maven2")
 }
