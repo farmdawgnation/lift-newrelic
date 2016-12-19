@@ -38,4 +38,5 @@ auto-magically yet.
 
 ## About Me
 
-My name is Matt Farmer. By day, I ship code at [Domino Data Lab](http://dominodatalab.com). By night I work on projects like the [Lift Framework](http://github.com/lift/framework) and others.
+My name is Matt Farmer. By night, I'm a committer and evangelist for the [Lift Framework](http://github.com/lift/framework)
+and I enjoy beer and open source software.
