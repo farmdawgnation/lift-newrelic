@@ -11,7 +11,7 @@ have to do is follow these simple steps.
 First, add the following line to your library dependencies:
 
 ```scala
-"me.frmr.newrelic"   %% "lift-newrelic"   % "1.1.3"
+"me.frmr.newrelic"   %% "lift-newrelic"   % "1.1.4"
 ```
 
 Then, add the following line somewhere in your Lift Apps Boot.scala:
