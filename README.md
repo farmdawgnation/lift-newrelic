@@ -39,4 +39,5 @@ auto-magically yet.
 ## About Me
 
 My name is Matt Farmer. By night, I'm a committer and evangelist for the [Lift Framework](http://github.com/lift/framework)
-and I enjoy beer and open source software.
+and I enjoy beer and open source software. You can find me [on Twitter](https://twitter.com/farmdawgnation)
+and on [my blog](https://farmdawgnation.com).
