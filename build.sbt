@@ -12,7 +12,7 @@ libraryDependencies ++= {
   val liftVersion = "3.0.1"
   Seq(
     "net.liftweb"               %% "lift-webkit"      % liftVersion     % "compile",
-    "com.newrelic.agent.java"   % "newrelic-api"      % "3.30.+"
+    "com.newrelic.agent.java"   % "newrelic-api"      % "3.38.+"
   )
 }
 
