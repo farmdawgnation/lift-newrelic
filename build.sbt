@@ -1,6 +1,6 @@
 name := "lift-newrelic"
 
-version := "1.1.6"
+version := "1.1.7-SNAPSHOT"
 
 organization := "me.frmr.newrelic"
 
