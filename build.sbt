@@ -4,9 +4,9 @@ version := "1.1.6-SNAPSHOT"
 
 organization := "me.frmr.newrelic"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.2"
 
-crossScalaVersions := Seq("2.11.8", "2.12.1")
+crossScalaVersions := Seq("2.11.11", "2.12.2")
 
 libraryDependencies ++= {
   val liftVersion = "3.1.0"
